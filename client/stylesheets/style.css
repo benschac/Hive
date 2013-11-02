@@ -10,18 +10,59 @@ body {
   background: #00ac65;
   color: #666666; }
 
+.navbar, .navbar-inner {
 
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
-/*.navbar {
-  margin-bottom: 10px; }
+.navbar-inner {
+  background-color: #2c2c2c; /* fallback color, place your own */
 
-  .navbar .navbar-inner {
-    -webkit-border-radius: 0px 0px 3px 3px;
-    -moz-border-radius: 0px 0px 3px 3px;
-    -ms-border-radius: 0px 0px 3px 3px;
-    -o-border-radius: 0px 0px 3px 3px;
-    border-radius: 0px 0px 3px 3px; }
+  /* Gradients for modern browsers, replace as you see fit */
+  /*background-image: -moz-linear-gradient(top, #333333, #222222);
+  background-image: -ms-linear-gradient(top, #333333, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: -o-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(top, #333333, #222222);
+  background-repeat: repeat-x;
 */
+  /* IE8-9 gradient filter */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+
+  padding: 3em 0;
+  margin: 5px 0;
+}
+
+div.navbar-inner {
+  margin-left: -1.5em;
+  border-radius: 0px;
+  font-size: 1em;
+  color: #00ac65;
+  text-shadow: 1px 1px black;
+  font-family: 'Sancreek', cursive;
+}
+
+div.nav-collapse.collapse ul.nav li a {
+    font-size: 1.5em;
+  color: #00ac65;
+  text-shadow: 1px 1px black;
+}
+
+div.navbar-inner a.brand  {
+  font-size: 4em;
+  color: #00ac65;
+  text-shadow: 1px 1px black;
+
+}
+
+
+.brand { 
+  text-transform: uppercase;
+}
+
 
 .cbp-af-header {
     position: fixed;
@@ -140,10 +181,20 @@ body {
     }
 }
  
-@media screen and (max-width: 32.25em) {
-    .cbp-af-header nav a {
-        font-size: 1em;
-    }
+@media all and (max-width: 1000px) and (min-width: 700px) {
+
+  div.navbar-inner {
+  margin-left: -1.5em;
+  border-radius: 0px;
+  font-size: 2em;
+
+}
+
+div.navbar-inner a.brand {
+  margin-left: 35%;
+}
+
+  
 }
  
 @media screen and (max-width: 24em) {
