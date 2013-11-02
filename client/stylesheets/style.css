@@ -63,6 +63,11 @@ div.navbar-inner a.brand  {
   text-transform: uppercase;
 }
 
+.navbar-inner .greenbutt {
+  background-color: green;
+  z-index: -50000;
+}
+
 
 .cbp-af-header {
     position: fixed;
@@ -210,7 +215,7 @@ a.upvote.btn.disabled {
   width: 1.75em;
   height: 2.75em;
   border-radius: 0;
-  background-color: #068894;
+  background-color: green;
 }
 
 #spinner {
